@@ -1,0 +1,60 @@
+/***
+*   Components - Global Navigation Styles
+***/
+
+.global-nav {
+	@include position(relative, 0 0 0);
+	border-right: 4px solid $fh-black;
+
+	.mobile-close {
+		display: none;	
+			
+		@include media-query(portable) {
+			display: block;
+		}
+	}
+
+
+
+	ul {
+
+		li {
+			border-bottom: 1px solid $fh-black;
+
+			&:last-of-type {
+				border-bottom: 1px solid transparent;
+			}
+
+			a {
+				@include transition(background-color 0.2s ease-in-out, border-color 0.2s ease-in-out);
+				display: block;
+				border-left: 4px solid transparent;
+			 	padding:	22px;
+			 	color: $white;
+			 	font-weight: $bold;
+			 	text-decoration: none;
+			 	@include font-size(15px);
+
+			 	&:hover {
+			 		border-color: white;
+			 		background-color: $fh-black;
+			 	}
+
+			 	.menu-icon {
+			 		display: inline-block;
+			 		width:30px;
+			 		height: 20px;
+			 		text-align: center;
+
+			 		img {
+			 			@include pixelated;
+		 		    height: 20px;
+		 		    width: auto;
+				    display: inline-block;
+				    margin-bottom: -3px;
+				  }
+			 	}
+			}
+		}
+	}
+}

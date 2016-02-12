@@ -1,0 +1,18 @@
+/***
+*   Components - Utility Styles
+***/
+
+.utility-nav {
+
+	.utility-nav__logo {
+		a {
+			display: block;
+			margin: 42px 0 40px 25px;
+			background: url('/designs/css/styles.css/fh-logo.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 199px;
+			height: 27.5px;
+		}
+	}
+}
