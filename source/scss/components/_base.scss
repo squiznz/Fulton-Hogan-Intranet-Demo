@@ -1,0 +1,24 @@
+/***
+*   Components -  Base Styles
+***/
+
+.container {
+	margin-left: 300px;
+}
+
+.content-section {
+	border-bottom: 1px solid $grey-480;
+	padding-bottom: 50px;
+	margin-bottom: 45px;
+	@include clearfix;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid $grey-480;
+	margin-bottom: 60px;
+}
+
+p {
+	@include font-size(15px);
+}

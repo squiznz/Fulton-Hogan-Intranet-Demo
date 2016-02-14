@@ -1,0 +1,14 @@
+/***
+*   Components -  CEO Messages Style
+***/
+
+#toolbar {
+	@include position(relative, null null null null);
+	display: block;
+	padding-top: 26px;
+	padding-bottom: 26px;
+
+	.toolbar__user {
+		display: inline-block;
+	}
+}
