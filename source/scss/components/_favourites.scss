@@ -4,6 +4,11 @@
 
 .favourites {
 
+	h2 {
+		font-weight: $bold;
+		text-transform: uppercase;
+		@include font-size(27px);
+	}
 
 
 }
@@ -13,8 +18,14 @@
 	}
 
 	.favourites__docs-list-item, .favourites__links-list-item, .favourites__forms-list-item {
-		color: $fh-blue;
-		font-weight: $medium;
-    	text-decoration: none;
+		color: $grey-520;
+		text-transform: lowercase;
+
+		a {
+			color: $fh-blue;
+			font-weight: $medium;
+	    	text-decoration: none;
+	    	text-transform: capitalize;
+	    }
 	}
 
