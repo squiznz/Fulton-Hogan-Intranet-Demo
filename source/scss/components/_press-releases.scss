@@ -43,10 +43,12 @@
 				display: inline-block;
 
 				&:first-of-type {
-					@include span(2 of 12 no-gutter);
+					@include span(1.8 of 12 no-gutter);
 				}
 				&:last-of-type {
-					@include span(10 of 12 no-gutter);
+					@include span(10.1 of 12 no-gutter);
+					padding-left: 30px;
+					border-left: 1px solid $grey-480;
 				}
 			}
 
@@ -66,9 +68,10 @@
 			.press-releases__item-read-more {
 				color: $fh-darkblue;
 				text-decoration: none;
+				@include font-size(14px);
 
 				i {
-					@include font-size(12px);
+					@include font-size(10px);
 					margin-left: 3px;
 				}
 
