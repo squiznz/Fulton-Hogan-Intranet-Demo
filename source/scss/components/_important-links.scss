@@ -7,6 +7,13 @@
 	@include span(2.5 of 12 no-gutter);
 	float: right;
 
+	@include media-query(portable) {
+		float: none;
+		margin-top: 30px;
+		width: auto;
+		display: inline-block;
+	}
+
 	h2 {
 		@include font-size(16px);
 		color: $fh-orange;
