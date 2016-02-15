@@ -41,9 +41,32 @@ function detectScrolling() {
 
 function globalActions() {
 
+  $('.utility-nav__primary-toggle, .mobile-close').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('html').toggleClass('show-menu');
+      toggleIcon('.utility-nav__primary-toggle .primary-nav__open-nav-icon','.utility-nav__primary-toggle .primary-nav__close-nav-icon');
+  });
+
+  $('html').click(function(event) {
+    var $html = $('html');
+    if (!$(event.target).closest('.global-nav').length && $html.hasClass('show-menu')) {
+      $('html').toggleClass('show-menu');
+      toggleIcon('.utility-nav__primary-toggle .primary-nav__open-nav-icon','.utility-nav__primary-toggle .primary-nav__close-nav-icon');
+    }    
+  });
+
+  $('.mobile-toggle').click(function(e) {
+    e.stopPropagation();
+
+    var $parent = $(this).parent();
+
+    $parent.toggleClass('expanded').siblings('li.expanded').removeClass('expanded');
+  });
+
   $("input.global-search__keyword").fbcompletion({
     'enabled'    : 'enabled',
-    'collection' : 'collection_name=fulton-hogan-meta',
+    'collection' : 'fulton-hogan-meta',
     'program'    : 'https://intranet-demo.squiz.co.nz/s/suggest.json',
     'alpha'      : '.5',
     'show'       : '10',
@@ -51,7 +74,7 @@ function globalActions() {
     'length'     : '3',
     'delay'      : '0'
     });
-  
+
 }; // globalActions()
 
 $(document).ready(function () {

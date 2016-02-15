@@ -32,6 +32,15 @@
 			@include gallery(1 of 3 (gutter-override: 4%) outside);
 			margin-bottom: 30px;
 
+			@include media-query(portable) {
+				@include gallery(1 of 2 (gutter-override: 4%) outside);
+			}
+
+			@include media-query(palm-landscape) {
+				@include gallery(1 of 1 (gutter-override: 4%) outside);
+				clear: both !important;
+			}
+
 			&:nth-child(odd) {
 				border-top: 4px solid $fh-darkgrey;
 			}
