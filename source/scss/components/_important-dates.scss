@@ -54,6 +54,7 @@
 		h3 {
 			@include font-size(18px);
 			padding: $padding $padding * 2;
+			color: $fh-navy;
 		}
 
 		table {
@@ -73,6 +74,14 @@
 						right: 0;
 						left: 0;
 						@include font-size(25px);
+					}
+				}
+
+				&.today {
+					a {
+						color: $fh-orange;
+						border: 2px solid $fh-orange;
+						padding: $padding;
 					}
 				}
 			}
@@ -97,6 +106,13 @@
 	.important-dates__calendar-next {
 		right: 0;
 		border-left: 4px solid $fh-navy;
+	}
+
+
+
+
+	.important-dates__list {
+		h
 	}
 
 
