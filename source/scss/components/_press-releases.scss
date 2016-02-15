@@ -32,22 +32,46 @@
 		li {
 			padding: 20px 0;
 			border-bottom: 1px solid $grey-480;
+			display: inline-block;
+			width: 100%;
+
+			&:last-of-type {
+				border-bottom-color: transparent;
+			}
 
 			div {
 				display: inline-block;
-				
+
 				&:first-of-type {
-					@include span(4 of 12);
+					@include span(2 of 12 no-gutter);
 				}
 				&:last-of-type {
-					@include span(8 of 12);
+					@include span(10 of 12 no-gutter);
 				}
 			}
 
 			.press-releases__item-date {
 				@include font-size(12px);
 				color: $grey-520;
-				padding: 18px 0 10px 0;
+			}
+
+			h3 {
+
+				a {
+					color: $fh-darkgrey;
+					text-decoration: none;
+				}
+			}
+
+			.press-releases__item-read-more {
+				color: $fh-darkblue;
+				text-decoration: none;
+
+				i {
+					@include font-size(12px);
+					margin-left: 3px;
+				}
+
 			}
 		}
 	}

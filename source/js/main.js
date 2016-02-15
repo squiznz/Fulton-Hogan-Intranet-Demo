@@ -41,6 +41,16 @@ function detectScrolling() {
 
 function globalActions() {
 
+  $("input.global-search__keyword").fbcompletion({
+    'enabled'    : 'enabled',
+    'collection' : 'collection_name=fulton-hogan-meta',
+    'program'    : 'https://intranet-demo.squiz.co.nz/s/suggest.json',
+    'alpha'      : '.5',
+    'show'       : '10',
+    'sort'       : '0',
+    'length'     : '3',
+    'delay'      : '0'
+    });
   
 }; // globalActions()
 
