@@ -1,0 +1,54 @@
+/***
+*   Components -  press releases styling
+***/
+
+.press-releases {
+	@include position(relative, null null null null);
+
+	h2 {
+		font-weight: $bold;
+		text-transform: uppercase;
+		@include font-size(27px);
+	}
+
+	.press-releases__read-more {
+		@include font-size(14px);
+		color: $grey-520;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		i {
+			@include font-size(10px);
+			margin-left: 3px;
+			color: $grey-520;
+		}
+	}
+
+	ul {
+
+		li {
+			padding: 20px 0;
+			border-bottom: 1px solid $grey-480;
+
+			div {
+				display: inline-block;
+				
+				&:first-of-type {
+					@include span(4 of 12);
+				}
+				&:last-of-type {
+					@include span(8 of 12);
+				}
+			}
+
+			.press-releases__item-date {
+				@include font-size(12px);
+				color: $grey-520;
+				padding: 18px 0 10px 0;
+			}
+		}
+	}
+}
