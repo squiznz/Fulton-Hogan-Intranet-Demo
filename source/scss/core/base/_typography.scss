@@ -2,12 +2,12 @@
 *   Base - Typography
 ***/
 
-@import url('//fonts.googleapis.com/css?family=Raleway:300,400,500,700,900');
+@import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 @import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-// @import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css');
 
-$font-primary:'Raleway', sans-serif;
-$font-secondary:'Open Sans', serif;
+$font-primary:'Roboto', sans-serif;
+$font-secondary:'Roboto', serif;
 
 
 // Font Weights
@@ -21,7 +21,7 @@ $ultrabold  :  900;
 @include headings(){
     font-family: $font-primary;
     font-weight: normal;
-    color: $grey-800;
+    color: $fh-darkgrey;
     font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;

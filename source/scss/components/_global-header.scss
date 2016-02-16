@@ -1,0 +1,13 @@
+/***
+*   Components - Global Header Styles
+***/
+
+.global-header {
+	@include position(fixed, 0 null 0 0);
+	background-color: $fh-grey;
+	width: 257px;
+
+	@include media-query(note) {
+		
+	}
+}

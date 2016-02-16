@@ -1,0 +1,29 @@
+/***
+*   Components -  CEO Messages Style
+***/
+
+#toolbar {
+	@include position(relative, null null null null);
+	display: block;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	padding-left: 80px;
+
+	.toolbar__user {
+		display: inline-block;
+		margin-top: 7px;
+
+		.toolbar__user-pic {
+			@include position(absolute, 18px null null 8px);
+			display: inline-block;
+			width: 54px;
+			height: 54px;
+			background-size: contain;
+			border-radius: 30px;
+		}
+
+		.toolbar__user--id {
+			font-weight: $light;
+		}
+	}
+}

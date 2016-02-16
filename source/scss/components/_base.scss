@@ -1,0 +1,40 @@
+/***
+*   Components -  Base Styles
+***/
+
+.container {
+	margin-left: 300px !important;
+
+	& > .container {
+		margin-left: 0 !important;
+	}
+
+	@include media-query(portable) {
+		margin-left: 0 !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+}
+
+.content-section {
+	border-bottom: 1px solid $grey-480;
+	padding-bottom: 50px;
+	margin-bottom: 45px;
+	@include clearfix;
+
+	&:last-of-type {
+		border-bottom: 0;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid $grey-480;
+	margin-bottom: 60px !important;
+}
+
+p {
+	@include font-size(15px);
+}

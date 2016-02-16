@@ -1,0 +1,23 @@
+/***
+*   Components -  CEO Messages Style
+***/
+
+.ceo-message {
+	@include position(relative, null null null null);
+	@include span(8.5 of 12);
+
+	@include media-query(portable) {
+		@include span(1 of 1);
+	}
+
+	.ceo-message__heading {
+		color: $fh-blue; 
+		@include font-size(12px);
+		text-transform: uppercase;
+		margin-bottom: 2px; 
+	}
+
+	h2 {
+		@include font-size(22px);
+	}
+}

@@ -1,0 +1,71 @@
+/***
+*   Components -  Favourites
+***/
+
+.favourites {
+
+	h2 {
+		font-weight: $bold;
+		text-transform: uppercase;
+		@include font-size(27px);
+	}
+
+	.favourites__edit {
+		@include font-size(14px);
+		color: $grey-520;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		i {
+			@include font-size(10px);
+			margin-left: 3px;
+			color: $grey-520;
+		}
+	}
+
+}
+
+	.favourites__docs, .favourites__links, .favourites__forms {
+		@include gallery(1 of 3);
+		border-left: 1px solid $grey-480;
+		padding-left: 30px;
+
+
+			@include media-query(portable) {
+				@include gallery(1 of 1);
+				clear: both !important;
+				margin-top: 30px;
+			}
+
+		h3 {
+			margin-bottom: 5px;
+		}
+	}
+
+	.favourites__links, .favourites__forms {
+			@include media-query(portable) {
+				border-left: 0;
+				padding-left: 0;
+			}
+	}
+
+	.favourites__docs {
+		border-left: 0;
+		padding-left: 0;
+	}
+
+	.favourites__docs-list-item, .favourites__links-list-item, .favourites__forms-list-item {
+		color: $grey-520;
+		text-transform: lowercase;
+
+		a {
+			color: $fh-blue;
+			font-weight: $medium;
+	    	text-decoration: none;
+	    	text-transform: capitalize;
+	    }
+	}
+

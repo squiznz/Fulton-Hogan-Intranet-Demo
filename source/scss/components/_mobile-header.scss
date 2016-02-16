@@ -1,0 +1,51 @@
+/***
+*   Components -  Mobile Header styling
+***/
+.utility-nav {
+	@include position(relative, null null null null);
+	background-color: rgba(37, 34, 34, 0.6);
+
+	.primary-nav__open-nav-icon, .primary-nav__close-nav-icon {
+		@include font-size(30px);
+		position: absolute;		
+		color: $white;
+	}
+
+	.primary-nav__open-nav-icon {
+		display: inline-block;
+	}
+	.primary-nav__close-nav-icon {
+		display: none;
+	}
+
+	.utility-nav__primary-toggle {
+		@include position(absolute, 50% 15% null null);
+		margin-top: -6px;
+	}
+}
+
+@include media-query(portable) {
+
+	.global-header {
+		@include position(relative, null null null null);
+		width: 100%;
+	}
+
+	.utility-nav {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.global-nav {
+		@include transition(left 0.4s ease-in-out);
+		@include position(fixed, 116px null 0 -320px);
+		width: 320px;
+		background-color: $fh-grey;
+		z-index: 999;
+
+		.show-menu & {
+			left: 0;
+		}
+	}
+
+}

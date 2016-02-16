@@ -1,0 +1,32 @@
+/***
+*   Components -  News Page styling
+***/
+
+.news-tabs {
+
+	ul {
+
+		li {
+
+			a {
+				display: block;
+				padding: 10px;
+				text-decoration: none;
+			}
+
+			&.ui-state-active {
+
+				a {
+					
+				}
+			}
+
+			&:first-of-type {
+
+				a {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
