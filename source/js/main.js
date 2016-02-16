@@ -37,7 +37,19 @@ function detectScrolling() {
   });
 }; // detectScrolling()
 
-
+/** Simple function that takes in two icons and toggles between them on click. **/
+function toggleIcon(icon1, icon2){
+  $(icon1).toggle(function() {
+    if ($(this).is(':visible')) {
+      $(this).css('display','inline-block');
+    }
+  });
+  $(icon2).toggle(function() {
+    if ($(this).is(':visible')) {
+      $(this).css('display','inline-block');
+    }
+  });
+}
 
 function globalActions() {
 
@@ -74,6 +86,11 @@ function globalActions() {
     'length'     : '3',
     'delay'      : '0'
     });
+
+  // $(document).on('click', '.ui-autocomplete li a', function() {
+  //   $('.global-search__keyword').text(this.text());
+  //   $('.global-search__submit').trigger('click');
+  // });
 
 }; // globalActions()
 
