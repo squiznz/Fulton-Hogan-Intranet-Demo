@@ -78,8 +78,10 @@ function globalActions() {
 
   $("input.global-search__keyword").fbcompletion({
     'enabled'    : 'enabled',
+    'standardCompletionEnabled': true,
     'collection' : 'fulton-hogan-meta',
     'program'    : 'https://intranet-demo.squiz.co.nz/s/suggest.json',
+    'format'    : 'extended',
     'alpha'      : '.5',
     'show'       : '10',
     'sort'       : '0',
@@ -87,8 +89,9 @@ function globalActions() {
     'delay'      : '0'
     });
 
-  // $(document).on('click', '.ui-autocomplete li a', function() {
-  //   $('.global-search__keyword').text(this.text());
+  // $(document).on('click', '.ui-autocomplete li a', function(e) {
+  //   var text = $(e.target).text();
+  //   $('.global-search__keyword').val(text);
   //   $('.global-search__submit').trigger('click');
   // });
 
