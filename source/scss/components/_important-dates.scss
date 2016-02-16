@@ -53,6 +53,7 @@
 				display: block;
 				color: $fh-orange;
 				line-height: 2.2em;
+
 			}
 		}
 
@@ -123,6 +124,10 @@
 				display: none;
 			}
 		}
+	}
+	
+	span.important-dates__calendar-next {
+		right: 0;
 	}
 
 	.important-dates__calendar-prev a, .important-dates__calendar-next a {
