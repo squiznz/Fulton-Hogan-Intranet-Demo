@@ -89,6 +89,8 @@ function globalActions() {
     'delay'      : '0'
     });
 
+  $( "#tabs" ).tabs();
+
   // $(document).on('click', '.ui-autocomplete li a', function(e) {
   //   var text = $(e.target).text();
   //   $('.global-search__keyword').val(text);
