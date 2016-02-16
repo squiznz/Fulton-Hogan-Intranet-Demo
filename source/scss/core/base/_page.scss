@@ -23,3 +23,9 @@ html {
     -moz-osx-font-smoothing: grayscale; // [4]
      -webkit-font-smoothing: antialiased; // [4]
 }
+
+.container__inside {
+    @include media-query(palm-land-up) {
+        width: 75%;
+    }
+}
