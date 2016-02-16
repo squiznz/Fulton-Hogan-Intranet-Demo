@@ -130,6 +130,14 @@
 		right: 0;
 	}
 
+	span.important-dates__calendar-next {
+		border-left: 4px solid $fh-navy;
+	}
+
+	span.important-dates__calendar-prev {
+		border-right: 4px solid $fh-navy;
+	}
+
 	.important-dates__calendar-prev a, .important-dates__calendar-next a {
 		display: block;
 		text-indent: -9999px;
