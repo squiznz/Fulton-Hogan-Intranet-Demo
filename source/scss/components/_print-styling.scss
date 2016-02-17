@@ -1,0 +1,19 @@
+/***
+*   Components -  Print Styling
+***/
+
+@media print {
+	#toolbar, .global-nav, .global-primary-nav, .important-links, .utility-nav__primary-toggle, .utility-nav__search-toggle  {
+		display: none !important;
+	}
+
+	.container {
+		margin-left: 0 !important;
+		padding-top: 20px !important;
+	}
+
+	.global-header:before {
+    height: 115px !important;
+    width: 100% !important;
+  }
+}
