@@ -64,6 +64,10 @@
 }
 
 form {
+	@include position(relative, null null null null);
+	display: inline-block;
+	margin-top: 20px;
+
 	ul {
 		list-style: none; 
 

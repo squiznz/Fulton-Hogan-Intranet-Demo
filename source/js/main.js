@@ -91,6 +91,14 @@ function globalActions() {
 
   $( "#tabs" ).tabs();
 
+
+  // var $container = $('.latest-news__list');
+  // $container.imagesLoaded( function(){
+  //   $container.masonry({
+  //     itemSelector : '.latest-news__item'
+  //   });
+  // });
+
   // $(document).on('click', '.ui-autocomplete li a', function(e) {
   //   var text = $(e.target).text();
   //   $('.global-search__keyword').val(text);

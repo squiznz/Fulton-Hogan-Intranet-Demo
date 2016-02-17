@@ -5,25 +5,26 @@
 #toolbar {
 	@include position(relative, null null null null);
 	display: block;
-	padding-top: 26px;
-	padding-bottom: 26px;
+	height: 114px;
+	padding-top: 33px;
 	padding-left: 80px;
+}
 
-	.toolbar__user {
-		display: inline-block;
-		margin-top: 7px;
+.toolbar__user {
+	display: inline-block;
+	position: relative;
+	margin-top: 12px;
+}
 
-		.toolbar__user-pic {
-			@include position(absolute, 18px null null 8px);
-			display: inline-block;
-			width: 54px;
-			height: 54px;
-			background-size: contain;
-			border-radius: 30px;
-		}
+.toolbar__user-pic {
+	@include position(absolute, -15px null null -74px);
+	display: inline-block;
+	width: 54px;
+	height: 54px;
+	background-size: contain;
+	border-radius: 30px;
+}
 
-		.toolbar__user--id {
-			font-weight: $light;
-		}
-	}
+.toolbar__user--id {
+	font-weight: $light;
 }

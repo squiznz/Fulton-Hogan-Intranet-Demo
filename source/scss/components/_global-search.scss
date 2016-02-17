@@ -33,11 +33,12 @@
 #global-search {
 	@include position(relative, null null null null);
 	float: right;
+	margin-top: 0;
 
 	.global-search__submit {
 		position: absolute;
-		top: 5px;
-		right: 0px;
+		top: 3px;
+		right: -8px;
 		width: 35px;
 		height: 35px;
 		background-color: transparent;
@@ -45,7 +46,7 @@
 		border: 0;
 
 		i {
-			@include font-size(15px);
+			@include font-size(14px);
 		}
 	}
 
@@ -79,6 +80,10 @@
 	  top:-20px;
 	  font-size:14px;
 	  color:#5264AE;
+
+	  @include media-query(portable) {
+		top:-15px;
+	  }
 	}
 
 	/* BOTTOM BARS ================================= */

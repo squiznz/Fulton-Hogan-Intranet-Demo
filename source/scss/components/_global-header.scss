@@ -3,11 +3,24 @@
 ***/
 
 .global-header {
-	@include position(fixed, 0 null 0 0);
-	background-color: $fh-grey;
-	width: 257px;
 
-	@include media-query(note) {
-		
-	}
+    &:before {
+        background-color: $fh-grey;
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 258px;
+        @include transition-property(transform);
+        @include transition-duration(0.6s);
+        @include transition-timing-function($ease-out-quint);
+    }
+
+    @include media-query(below-desk) {
+        &:before {
+            width: 220px;
+        }
+    }
 }
