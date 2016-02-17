@@ -90,3 +90,15 @@
         margin-right: 0;
     }
 }
+
+.third-to-stacked {
+    @include span(1 of 3);
+
+    @include media-query(palm-landscape) {
+        @include span(1 of 1);
+    }
+
+    &.no-gutter {
+        margin-right: 0;
+    }
+}
