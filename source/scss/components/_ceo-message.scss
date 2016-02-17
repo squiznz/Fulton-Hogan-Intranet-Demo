@@ -10,6 +10,10 @@
 		@include span(1 of 2);
 	}
 
+	@include media-query(palm-landscape) {
+		@include span(1 of 1);
+	}
+
 	.ceo-message__heading {
 		color: $fh-blue; 
 		@include font-size(12px);
