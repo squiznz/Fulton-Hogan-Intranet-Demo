@@ -1,0 +1,33 @@
+/***
+*   Components -  Search Page Styling
+***/
+
+.search {
+	font-family: $font-primary !important;		
+	line-height: 1.6 !important;
+	letter-spacing: 0.5px;
+
+	.global-nav ul li a {
+		font-size: 15px !important;		
+
+	}
+
+	.global-nav ul li a .menu-icon img {
+		margin-bottom: 3px !important;
+		vertical-align: top !important;
+	}
+
+	hr {
+    margin-top: 0px !important;
+   	margin-bottom: 0px !important;
+    border: 0;
+    border-top: none !important;
+  }
+
+	hr {
+  	border: 0 !important;
+    border-bottom: 1px solid #e9e9e9 !important;
+    margin-bottom: 60px !important;
+  }
+}
+
