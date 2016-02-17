@@ -21,6 +21,10 @@
 		margin-left: 0 !important;
 	}
 
+	@include media-query(below-desk) {
+        margin-left: 262px !important;
+	}
+
 	@include media-query(portable) {
 		margin-left: 0 !important;
 		padding-left: 20px !important;

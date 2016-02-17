@@ -3,16 +3,32 @@
 ***/
 
 .utility-nav {
+	display: block;
+	@include position(absolute, 0 null null 0);
+	width: 258px;
+	height: 114px;
 
-	.utility-nav__logo {
+	&__logo {
+		display: block;
+		width: 258px;
+
 		a {
 			display: block;
-			margin: 42px 0 40px 25px;
-			background: url('/designs/css/styles.css/fh-logo.png');
+			width: 100%;
+			height: 114px;
+			background: url('/__data/assets/image/0012/1335/fh-logo.png');
 			background-repeat: no-repeat;
-			background-size: contain;
-			width: 199px;
-			height: 27.5px;
+			background-size: 200px 29px;
+			background-position: 24px 42px;
+
+		}
+
+		@include media-query(below-desk) {
+			width: 220px;
+
+			a {
+	        	background-size: 170px 24px;
+	        }
 		}
 	}
 }
