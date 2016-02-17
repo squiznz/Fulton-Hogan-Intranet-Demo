@@ -10,6 +10,10 @@
 		font-weight: $bold;
 	}
 
+	& > img {
+		width: 100%;
+	}
+
 	.latest-news__read-more {
 		@include font-size(14px);
 		color: $grey-520;
