@@ -76,3 +76,13 @@
 .five-twelfths       { width: 41.6666666% !important; }
 .seven-twelfths      { width: 58.3333333% !important; }
 .eleven-twelfths     { width: 91.6666666% !important; }
+
+
+// Custom
+.half-to-stacked {
+    width: 50% !important;
+
+    @include media-query(palm-landscape) {
+        width: 100%
+    }
+}
