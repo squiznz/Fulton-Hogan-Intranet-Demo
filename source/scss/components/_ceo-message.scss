@@ -7,7 +7,7 @@
 	@include span(8.5 of 12);
 
 	@include media-query(portable) {
-		@include span(1 of 1);
+		@include span(1 of 2);
 	}
 
 	.ceo-message__heading {

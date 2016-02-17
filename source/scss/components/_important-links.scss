@@ -8,6 +8,10 @@
 	float: right;
 
 	@include media-query(portable) {
+		@include span(1 of 2);
+	}
+
+	@include media-query(palm) {
 		float: none;
 		margin-top: 30px;
 		width: auto;
