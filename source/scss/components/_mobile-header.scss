@@ -89,7 +89,9 @@
 	}
 
 	.utility-nav__primary-toggle {
-		@include position(absolute, 40% 45px null null);
+		@include position(absolute, 40% 19px null null);
+		width: 26px;
+		height: 24px;
 	}
 
 	.global-nav {
