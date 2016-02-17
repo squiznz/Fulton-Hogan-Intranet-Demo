@@ -34,3 +34,12 @@ p {
     margin-bottom: 1.0em;
     font-weight: $light;
 }
+
+ul, ol {
+    list-style-position: inside;
+    margin-bottom: 1.0em;
+}
+
+li {
+    font-weight: $light;
+}
