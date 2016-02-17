@@ -36,8 +36,8 @@
 
 	.global-search__submit {
 		position: absolute;
-		top: 5px;
-		right: 0px;
+		top: 3px;
+		right: -8px;
 		width: 35px;
 		height: 35px;
 		background-color: transparent;
@@ -45,7 +45,7 @@
 		border: 0;
 
 		i {
-			@include font-size(15px);
+			@include font-size(14px);
 		}
 	}
 

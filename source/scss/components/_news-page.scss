@@ -1,30 +1,45 @@
 /***
 *   Components -  News Page styling
 ***/
-
+.ui-widget * { outline: none; }​
 .news-tabs {
 
-	ul {
+	.ui-tabs-nav {
 
 		li {
 
 			a {
+				@include transition(border-bottom-color 0.4s ease-in-out);
 				display: block;
-				padding: 10px;
+				padding: 10px 0px 2px 0px;
+				margin: 0px 10px 6px 10px;
 				text-decoration: none;
+				border-bottom: 3px solid transparent;
+
+				&:hover {
+					border-bottom-color: $fh-orange;
+				}
+
+				&.ui-state-focus: {
+					outline: none;
+
+					&:focus {
+						outline: none;
+					}
+				}
 			}
 
 			&.ui-state-active {
 
 				a {
-					
+					border-bottom-color: $fh-orange;
 				}
 			}
 
 			&:first-of-type {
 
 				a {
-					padding-left: 0;
+					margin-left: 0;
 				}
 			}
 		}
