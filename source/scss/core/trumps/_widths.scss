@@ -87,11 +87,6 @@
     }
 
     &.no-gutter {
-        @include span(1 of 2 no-gutter);
-
-        @include media-query(palm-landscape) {
-            @include span(1 of 1);
-        }
+        margin-right: 0;
     }
-
 }
