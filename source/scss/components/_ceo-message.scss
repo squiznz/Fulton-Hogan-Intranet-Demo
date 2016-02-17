@@ -12,6 +12,7 @@
 
     @include media-query(palm-landscape) {
         @include span(1 of 1);
+        margin-bottom: quadruple($margin);
     }
 
     .ceo-message__heading {
