@@ -5,16 +5,25 @@
 #toolbar {
 	@include position(relative, null null null null);
 	display: block;
-	padding-top: 26px;
+	padding-top: 28px;
 	padding-bottom: 26px;
 	padding-left: 80px;
+	min-height: 115px;
+
+	@include media-query(portable) {
+		margin-top: 115.5px;
+	}
 
 	.toolbar__user {
 		display: inline-block;
-		margin-top: 7px;
+		margin-top: 16px;
+
+		@include media-query(portable) {
+			padding-left: 60px;
+		}
 
 		.toolbar__user-pic {
-			@include position(absolute, 18px null null 8px);
+			@include position(absolute, 29px null null 8px);
 			display: inline-block;
 			width: 54px;
 			height: 54px;
@@ -25,5 +34,9 @@
 		.toolbar__user--id {
 			font-weight: $light;
 		}
+	}
+
+	.global-search {
+		margin-top: 4px;
 	}
 }

@@ -34,6 +34,13 @@
 	.utility-nav {
 		display: inline-block;
 		width: 100%;
+
+		.show-menu & {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
 	}
 
 	.global-nav {
@@ -47,5 +54,6 @@
 			left: 0;
 		}
 	}
+
 
 }
