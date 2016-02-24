@@ -1,0 +1,27 @@
+.contacts-list {
+  margin-top: 20px;
+}
+
+.contact {
+  list-style: none;
+  position: relative;
+  display: block;
+  overflow: auto;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.contact__contact-photo {
+  float: left;
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.contact__contact-info {
+  float: left;
+  margin-left: 12px;
+  padding: 10px;
+  width: 65%;
+}
+ 
